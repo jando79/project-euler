@@ -1,7 +1,8 @@
-import { Multiples } from './../src/euler.js';
+import { Multiples, smallestMultiple } from './../src/euler.js';
 import { Fibonacci } from './../src/euler.js';
 import { Prime } from './../src/euler.js';
 import { Palindrome } from './../src/euler.js';
+import {smallesMultiple} from './../src/euler.js';
 
 describe('Multiples', () => {
 
@@ -28,5 +29,12 @@ describe('Palindrome', () => {
     
     test('it should find the largest palindrome made from the product of two 2-digit numbers', () => {
     expect(Palindrome()).toBe('9009');
+    });
+});
+
+describe('smallestMultiple', () => {
+
+    test('it should the smallest positive number that is evenly divisible by all of the numbers from 1 to 20', () => {
+        expect(smallestMultiple()).toBe(232792560);
     });
 });

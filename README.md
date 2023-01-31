@@ -1,10 +1,10 @@
-# Title
+# Project Euler
 
-##### By _Molly Donegan_
+##### By _Molly Donegan, Asia Kaplanyan and David Jandron_
 
 #### _Description_
 
-_A web application that..._
+_A web application that solves Euler problems_
 
 ## Technologies Used
 
@@ -12,10 +12,6 @@ _A web application that..._
 * HTML / CSS
 * Boostrap
 * Webpack
-
-## Github Pages Site
-
-[Title](https://mdonegan91.github.io/title/)
 
 ## Setup/Installation Requirements
 

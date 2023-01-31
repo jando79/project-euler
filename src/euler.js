@@ -29,23 +29,41 @@ export function Fibonacci() {
 }
 
 const isPrime = num => {
-  for (let i = 2, s = Math.sqrt(num); i <= s; i++) {
-    if (num % i === 0) return false;
-  }
-  return num > 1;
+    for (let i = 2, s = Math.sqrt(num); i <= s; i++) {
+        if (num % i === 0) return false;
+    }
+    return num > 1;
 }
 
 export function Prime() {
-  let number = 13195;
-  let index1 = Math.round(number / 2);
-  let primes = [];
-  while (index1 > 0) {
-    if ((number % index1) === 0) {
-      if (isPrime(index1) === true) {
-        primes.push(index1);
-      }
+    let number = 13195;
+    let index1 = Math.round(number / 2);
+    let primes = [];
+    while (index1 > 0) {
+        if ((number % index1) === 0) {
+            if (isPrime(index1) === true) {
+                primes.push(index1);
+            }
+        }
+        index1--;
     }
-    index1--;
-  }
-  return primes[0];
+    return primes[0];
+}
+
+export function Palindrome() {
+    let number1 = 99;
+    let number2 = 99;
+    let number1x2 = 0;
+    while (number1 > 0) {
+        while (number2 > 0) {
+            number1x2 = number1 * number2;
+            let array1 = Array.from(n.toString()).map(number1x2);
+            console.log(array1);
+            if (array1[0] === array1[3] && array1[1] === array1[2]) {
+                return [array1];
+            }
+            number2 --;
+        }
+        number1 --;
+    }
 }

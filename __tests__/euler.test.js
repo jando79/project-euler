@@ -1,6 +1,7 @@
 import { Multiples } from './../src/euler.js';
 import { Fibonacci } from './../src/euler.js';
 import { Prime } from './../src/euler.js';
+import { Palindrome } from './../src/euler.js';
 
 describe('Multiples', () => {
 
@@ -16,9 +17,16 @@ describe('Fibonacci', () => {
     });
 });
 
-describe ('Prime', () => {
+describe('Prime', () => {
 
     test('it should return the largest prime factor of the number 13195', () => {
         expect(Prime(13195)).toBe(29);
+    });
+});
+
+describe('Palindrome', () => {
+    
+    test('it should find the largest palindrome made from the product of two 2-digit numbers', () => {
+    expect(Palindrome()).toBe(9009);
     });
 });

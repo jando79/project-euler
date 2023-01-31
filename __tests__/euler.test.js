@@ -2,7 +2,7 @@ import { Multiples, smallestMultiple } from './../src/euler.js';
 import { Fibonacci } from './../src/euler.js';
 import { Prime } from './../src/euler.js';
 import { Palindrome } from './../src/euler.js';
-import {smallesMultiple} from './../src/euler.js';
+import {smallestMultiple} from './../src/euler.js';
 
 describe('Multiples', () => {
 
@@ -38,3 +38,4 @@ describe('smallestMultiple', () => {
         expect(smallestMultiple()).toBe(232792560);
     });
 });
+

@@ -27,6 +27,6 @@ describe('Prime', () => {
 describe('Palindrome', () => {
     
     test('it should find the largest palindrome made from the product of two 2-digit numbers', () => {
-    expect(Palindrome()).toBe(9009);
+    expect(Palindrome()).toBe('9009');
     });
 });

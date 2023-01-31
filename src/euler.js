@@ -13,12 +13,12 @@ export function Multiples() {
 }
 
 export function Fibonacci() {
-    let i = 1;
+    let ind = 1;
     let sum = 0;
     let fib = [1, 2];
-    while (i < 1001) {
-        fib.push(fib[i] + fib[i - 1]);
-        i++;
+    while (ind < 1001) {
+        fib.push(fib[ind] + fib[ind - 1]);
+        ind ++;
     }
     fib.forEach(function (element) {
         if ((element % 2) === 0 && element < 4000000) {
@@ -57,10 +57,10 @@ export function Palindrome() {
     while (number1 > 0) {
         while (number2 > 0) {
             number1x2 = number1 * number2;
-            let array1 = Array.from(n.toString()).map(number1x2);
+            let array1 = Array.from(number1x2.toString());
             console.log(array1);
             if (array1[0] === array1[3] && array1[1] === array1[2]) {
-                return [array1];
+                return array1.join("");
             }
             number2 --;
         }
